@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Person from './Person/Person';
 
+
 class App extends Component {
 
   state = {
@@ -55,7 +56,7 @@ class App extends Component {
       font: "inherit",
       border: "1px solid blue",
       padding: "8px",
-      cursor: "pointer"
+      cursor: "pointer",
     }
     
 
@@ -77,14 +78,14 @@ class App extends Component {
     }
 
     return(
-      <div className="App">
-        <h1>Hi, I'm a React App</h1>
-        <p>This is really working!</p>
-        <button
-          style={style} 
-          onClick={this.togglePersonsHandler}>Toggle Persons</button>
-          {persons}
-      </div>
+        <div className="App">
+          <h1>Hi, I'm a React App</h1>
+          <p>This is really working!</p>
+          <button
+            style={style} 
+            onClick={this.togglePersonsHandler}>Toggle Persons</button>
+            {persons}
+        </div>
     )
   };
 }
